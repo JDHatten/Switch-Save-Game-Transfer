@@ -15,7 +15,7 @@
 ::    For example, {xx} could be 04, 0b, or 13.                               ::
 :: 2. Add new games by copying one already added and update the title and     ::
 ::    Ryujinx/Yuzu save directory folders.                                    ::
-:: 3. Run the script and select the game title you wish to transfer saves.    ::
+:: 3. Run the script and and make your game save transfer selections.         ::
 ::                                                                            ::
 :: Notes:                                                                     ::
 :: Only one backup will be made per game save transfer and running the script ::
