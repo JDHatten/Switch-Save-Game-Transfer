@@ -43,7 +43,6 @@ set ryujinx_save_file_directory=%APPDATA%\Ryujinx\bis\user\save
 
 :: Yuzu Save File Directory (Get ID from the folder and not the app as it's reveresed)
 set yuzu_save_file_directory=%APPDATA%\yuzu\nand\user\save\0000000000000000\{your yuzu user id}
-set yuzu_save_file_directory=%APPDATA%\yuzu\nand\user\save\0000000000000000\3608B194A2FD5B18D1F3B29DD93B764F
 
 
 :: Array Of Game Save Directory Paths
@@ -52,19 +51,16 @@ set switch_save_directories[0].title=Transfer All Game Saves [Backup Your Save F
 :: Astral Chain
 set switch_save_directories[!i!].title=Astral Chain
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000009\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01007300020FA000
 call :AddAboveGame
 :: Bayonetta
 set switch_save_directories[!i!].title=Bayonetta
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\000000000000000a\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\010076F0049A2000
 call :AddAboveGame
 :: Bayonetta 2
 set switch_save_directories[!i!].title=Bayonetta 2
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\000000000000000b\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01007960049A0000
 call :AddAboveGame
 :: Bravely Default II
@@ -80,13 +76,11 @@ call :AddAboveGame
 :: Donkey Kong Country: Tropical Freeze
 set switch_save_directories[!i!].title=Donkey Kong Country: Tropical Freeze
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000007\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100C1F0051B6000
 call :AddAboveGame
 :: Final Fantasy Crystal Chronicles Remastered Edition
 set switch_save_directories[!i!].title=Final Fantasy Crystal Chronicles Remastered Edition
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\000000000000000c\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100CE4010AAC000
 call :AddAboveGame
 :: Fire Emblem: Three Houses
@@ -97,19 +91,16 @@ call :AddAboveGame
 :: Luigi's Mansion 3
 set switch_save_directories[!i!].title=Luigi's Mansion 3
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\000000000000000d\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100DCA0064A6000
 call :AddAboveGame
 :: Mario + Rabbids Kingdom Battle
 set switch_save_directories[!i!].title=Mario + Rabbids Kingdom Battle
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\000000000000000e\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100E46003042000
 call :AddAboveGame
 :: Mario Kart 8 Deluxe
 set switch_save_directories[!i!].title=Mario Kart 8 Deluxe
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\000000000000000f\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100152000022000
 call :AddAboveGame
 :: Pikmin 3 Deluxe
@@ -120,7 +111,6 @@ call :AddAboveGame
 :: Splatoon 2
 set switch_save_directories[!i!].title=Splatoon 2
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000011\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01003BC0000A0000
 call :AddAboveGame
 :: Super Mario 3D All-Stars
@@ -131,13 +121,11 @@ call :AddAboveGame
 :: Super Mario 3D World + Bowser's Fury
 set switch_save_directories[!i!].title=Super Mario 3D World + Bowser's Fury
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000012\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\010028600EBDA000
 call :AddAboveGame
 :: Super Mario Odyssey
 set switch_save_directories[!i!].title=Super Mario Odyssey
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000002\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100000000010000
 call :AddAboveGame
 :: Super Mario Party
@@ -153,19 +141,16 @@ call :AddAboveGame
 :: The Legend of Zelda: Breath of the Wild
 set switch_save_directories[!i!].title=The Legend of Zelda: Breath of the Wild
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000001\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01007EF00011E000
 call :AddAboveGame
 :: The Legend of Zelda: Link's Awakening
 set switch_save_directories[!i!].title=The Legend of Zelda: Link's Awakening
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000006\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01006BB00C6F0000
 call :AddAboveGame
 :: Xenoblade Chronicles: Definitive Edition
 set switch_save_directories[!i!].title=Xenoblade Chronicles: Definitive Edition
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000008\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100FF500E34A000
 call :AddAboveGame
 :: Xenoblade Chronicles 2
