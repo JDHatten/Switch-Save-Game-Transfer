@@ -1,7 +1,7 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Switch Save Game Transfer Script                                           ::
 ::     For Ryujinx and Yuzu Switch Emulators                                  ::
-::         by Grahf Azura                                                     ::
+::         by JDHatten                                                        ::
 ::             Version 1.0                                                    ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::                                                                            ::
