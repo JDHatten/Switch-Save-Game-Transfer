@@ -1,7 +1,7 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Switch Save Game Transfer Script                                           ::
 ::     For Ryujinx and Yuzu Switch Emulators                                  ::
-::         by JDHatten                                                        ::
+::         by Grahf Azura                                                     ::
 ::             Version 1.0                                                    ::
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::                                                                            ::
@@ -41,7 +41,7 @@ set backup_extention=__backup
 :: Ryujinx Save File Directory
 set ryujinx_save_file_directory=%APPDATA%\Ryujinx\bis\user\save
 
-:: Yuzu Save File Directory (Get ID from the folder and not the app as it's reveresed)
+:: Yuzu Save File Directory (Get ID from the folder and not the app as it's reversed)
 set yuzu_save_file_directory=%APPDATA%\yuzu\nand\user\save\0000000000000000\{your yuzu user id}
 
 
@@ -88,20 +88,50 @@ set switch_save_directories[!i!].title=Fire Emblem: Three Houses
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\010055D009F78000
 call :AddAboveGame
+:: Ghosts n Goblins Resurrection
+set switch_save_directories[!i!].title=Ghosts n Goblins Resurrection
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100D6200F2BA000
+call :AddAboveGame
+:: Hyrule Warriors: Definitive Edition
+set switch_save_directories[!i!].title=Hyrule Warriors: Definitive Edition
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100AE00096EA000
+call :AddAboveGame
+:: Hyrule Warriors: Age of Calamity
+set switch_save_directories[!i!].title=Hyrule Warriors: Age of Calamity
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01002B00111A2000
+call :AddAboveGame
+:: Kirby and the Forgotten Land
+set switch_save_directories[!i!].title=Kirby and the Forgotten Land
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01004D300C5AE000
+call :AddAboveGame
 :: Luigi's Mansion 3
 set switch_save_directories[!i!].title=Luigi's Mansion 3
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100DCA0064A6000
 call :AddAboveGame
+:: Mario + Rabbids Kingdom Battle (Japan)
+set switch_save_directories[!i!].title=Mario + Rabbids Kingdom Battle (Japan)
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100E46003042000
+call :AddAboveGame
 :: Mario + Rabbids Kingdom Battle
 set switch_save_directories[!i!].title=Mario + Rabbids Kingdom Battle
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
-set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100E46003042000
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\010067300059A000
 call :AddAboveGame
 :: Mario Kart 8 Deluxe
 set switch_save_directories[!i!].title=Mario Kart 8 Deluxe
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100152000022000
+call :AddAboveGame
+:: Metroid Dread
+set switch_save_directories[!i!].title=Metroid Dread
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\010093801237C000
 call :AddAboveGame
 :: Pikmin 3 Deluxe
 set switch_save_directories[!i!].title=Pikmin 3 Deluxe
@@ -147,6 +177,11 @@ call :AddAboveGame
 set switch_save_directories[!i!].title=The Legend of Zelda: Link's Awakening
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01006BB00C6F0000
+call :AddAboveGame
+:: The Legend of Zelda - Skyward Sword HD
+set switch_save_directories[!i!].title=The Legend of Zelda - Skyward Sword HD
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01002DA013484000
 call :AddAboveGame
 :: Xenoblade Chronicles: Definitive Edition
 set switch_save_directories[!i!].title=Xenoblade Chronicles: Definitive Edition
