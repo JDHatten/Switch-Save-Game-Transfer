@@ -48,6 +48,11 @@ set yuzu_save_file_directory=%APPDATA%\yuzu\nand\user\save\0000000000000000\{you
 :: Array Of Game Save Directory Paths
 set /a i=1
 set switch_save_directories[0].title=Transfer All Game Saves [Backup Your Save Files First]
+:: Animal Crossing: New Horizons
+set switch_save_directories[!i!].title=Animal Crossing: New Horizons
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01006F8002326000
+call :AddAboveGame
 :: Astral Chain
 set switch_save_directories[!i!].title=Astral Chain
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
@@ -87,6 +92,11 @@ call :AddAboveGame
 set switch_save_directories[!i!].title=Fire Emblem: Three Houses
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\010055D009F78000
+call :AddAboveGame
+:: Fire Emblem Engage
+set switch_save_directories[!i!].title=Fire Emblem Engage
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100A6301214E000
 call :AddAboveGame
 :: Ghosts n Goblins Resurrection
 set switch_save_directories[!i!].title=Ghosts n Goblins Resurrection
@@ -138,6 +148,11 @@ set switch_save_directories[!i!].title=Pikmin 3 Deluxe
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100F4C009322000
 call :AddAboveGame
+:: Pokemon Scarlet
+set switch_save_directories[!i!].title=Pokemon Scarlet
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100A3D008C5C000
+call :AddAboveGame
 :: Splatoon 2
 set switch_save_directories[!i!].title=Splatoon 2
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
@@ -178,10 +193,20 @@ set switch_save_directories[!i!].title=The Legend of Zelda: Link's Awakening
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01006BB00C6F0000
 call :AddAboveGame
-:: The Legend of Zelda - Skyward Sword HD
-set switch_save_directories[!i!].title=The Legend of Zelda - Skyward Sword HD
+:: The Legend of Zelda: Skyward Sword HD
+set switch_save_directories[!i!].title=The Legend of Zelda: Skyward Sword HD
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01002DA013484000
+call :AddAboveGame
+:: The Legend of Zelda: Tears of the Kingdom
+set switch_save_directories[!i!].title=The Legend of Zelda: Tears of the Kingdom
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100F2C0115B6000
+call :AddAboveGame
+:: Triangle Strategy
+set switch_save_directories[!i!].title=Triangle Strategy
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100CC80140F8000
 call :AddAboveGame
 :: Xenoblade Chronicles: Definitive Edition
 set switch_save_directories[!i!].title=Xenoblade Chronicles: Definitive Edition
@@ -197,6 +222,11 @@ call :AddAboveGame
 set switch_save_directories[!i!].title=Xenoblade Chronicles 2: Torna - The Golden Country
 set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100C9F009F7A000
+call :AddAboveGame
+:: Xenoblade Chronicles 3
+set switch_save_directories[!i!].title=Xenoblade Chronicles 3
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\010074F013262000
 call :AddAboveGame
 
 
