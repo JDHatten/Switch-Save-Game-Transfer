@@ -42,7 +42,7 @@ set backup_extention=__backup
 set ryujinx_save_file_directory=%APPDATA%\Ryujinx\bis\user\save
 
 :: Yuzu Save File Directory (Get ID from the folder and not the app as it's reversed)
-set yuzu_save_file_directory=%APPDATA%\yuzu\nand\user\save\0000000000000000\{your yuzu user id}
+set yuzu_save_file_directory=%APPDATA%\yuzu\nand\user\save\0000000000000000\86653157FDA50BD0428EA3BA9655BA9A
 
 
 :: Array Of Game Save Directory Paths
@@ -200,7 +200,7 @@ set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\01002DA01348400
 call :AddAboveGame
 :: The Legend of Zelda: Tears of the Kingdom
 set switch_save_directories[!i!].title=The Legend of Zelda: Tears of the Kingdom
-set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\00000000000000{xx}\0
+set switch_save_directories[!i!].ryujinx=%ryujinx_save_file_directory%\0000000000000001\0
 set switch_save_directories[!i!].yuzu=%yuzu_save_file_directory%\0100F2C0115B6000
 call :AddAboveGame
 :: Triangle Strategy
